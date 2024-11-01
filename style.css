@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #2d1312;
+  color: red;
+  font-family: "Teko", sans-serif;
+}
+
+p {
+  color: #ffebcd;
+}
+
+.title {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #63231a;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  width: 100%;
+  letter-spacing: 1px;
+  font-size: 90%;
+  font-family: "Rubik", sans-serif;
+  line-height: 50%;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #d5bd9a;
+}
+
+.headPic {
+  display: flex;
+  background: url(/bilder/wilkommen.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 30%;
+  width: 100%;
+}
+
+.navBar {
+  margin-top: 5px;
+  margin-left: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid white;
+  border-radius: 30px;
+  width: 95%;
+}
+
+.nav1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 25px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.nav2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 25px;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding-bottom: 3%;
+  overflow: hidden;
+  background-size: 10%;
+}
+
+li {
+  float: left;
+}
+
+a {
+  display: flex;
+  padding: 4px;
+  background-size: 10%;
+}
+
+li a {
+  margin-top: 10px;
+  text-decoration: none;
+  border-radius: 15px;
+  background-color: #ffffff;
+  border: 2px solid #d5bd9a00;
+  letter-spacing: 1px;
+  font-size: 70%;
+  font-family: "Rubik", sans-serif;
+  line-height: 80%;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #ca4736;
+  transition: 0.5s;
+}
+
+li a:hover {
+  padding: 6px;
+  border-radius: 15px;
+  border: 2px solid #000000;
+  background-color: #ca4736;
+  letter-spacing: 1px;
+  font-size: 80%;
+  font-family: "Rubik", sans-serif;
+  line-height: 80%;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #ffffff;
+  transition-duration: 0, 8s;
+}
+
+/*startbildschirm*/
+
+.title2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  font-size: 120%;
+  font-family: "Rubik", sans-serif;
+  line-height: 50%;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #d5bd9a;
+}
+
+.mainAbove {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#aboveP {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+  font-size: 90%;
+}
+
+.shop2 {
+  display: flex;
+  width: 360px;
+}
+
+.abovePicIn {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2px;
+  margin-top: 3px;
+  margin-bottom: 10px;
+}
+
+/* main*/
+
+.footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #2d0f0b;
+}
+
+.footerLinks {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  gap: 30px;
+}
+
+.footerLink {
+  font-size: 80%;
+  font-family: "Rubik", sans-serif;
+  line-height: 50%;
+  letter-spacing: 1px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #d5bd9a;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 700px) {
+  .title {
+    font-size: 120%;
+  }
+  .navBar {
+    font-size: 120%;
+  }
+
+  .title2 {
+    font-size: 140%;
+  }
+
+  .mainAbove {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 10px;
+  }
+
+  #aboveP {
+    font-size: 110%;
+  }
+
+  .shop2 {
+    width: 100%;
+  }
+
+  .abovePicIn {
+    width: 100%;
+  }
+
+  .footerLinks {
+    gap: 50px;
+  }
+
+  .footerLink {
+    font-size: 100%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .title {
+    font-size: 150%;
+  }
+  .navBar {
+    font-size: 160%;
+  }
+
+  .title2 {
+    font-size: 160%;
+  }
+  .mainAbove {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  #aboveP {
+    font-size: 120%;
+  }
+
+  .shop2 {
+    width: 98%;
+  }
+  .abovePicIn {
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+  }
+
+  .footerLinks {
+    gap: 70px;
+  }
+
+  .footerLink {
+    font-size: 120%;
+  }
+}
