@@ -32,7 +32,7 @@ p {
 
 .headPic {
   display: flex;
-  background: url(./bilder/wilkommen.jpg);
+  background: url(bilder/wilkommen.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   padding: 30%;
